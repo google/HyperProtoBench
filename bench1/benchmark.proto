@@ -1,0 +1,259 @@
+// Copyright 2021 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto2";
+
+package hyperprotobench;
+
+message M1 {
+  optional bytes f1 = 3;
+  message M2 {
+    optional string f1 = 2;
+    optional string f2 = 3;
+    optional string f3 = 6;
+  }
+  optional M2 f2 = 4;
+  optional bytes f3 = 5;
+  optional float f4 = 8;
+  optional float f5 = 9;
+  optional uint32 f6 = 10;
+  optional int64 f7 = 13;
+  optional int32 f8 = 14;
+  optional int64 f9 = 15;
+  optional bool f10 = 16;
+  optional int64 f11 = 17;
+}
+
+message M3 {
+  optional uint32 f1 = 1;
+  optional int32 f2 = 2;
+  optional string f3 = 3;
+  optional float f4 = 4;
+  optional float f5 = 5;
+  optional string f6 = 6;
+  optional string f7 = 7;
+  enum E1 {
+    E1_CONST_1 = 8;
+    E1_CONST_2 = 108;
+    E1_CONST_3 = 110;
+    E1_CONST_4 = 16;
+    E1_CONST_5 = 123;
+  }
+  optional E1 f8 = 11;
+  message M4 {
+    optional float f1 = 1;
+    optional int32 f2 = 2;
+  }
+  optional M4 f9 = 12;
+  optional float f10 = 14;
+  optional string f11 = 20;
+}
+
+message M5 {
+  optional int64 f1 = 1;
+  optional int32 f2 = 5;
+  optional float f3 = 6;
+  optional int32 f4 = 7;
+  optional bool f5 = 8;
+  optional fixed64 f6 = 11;
+  optional int32 f7 = 13;
+  optional int64 f8 = 14;
+  optional int64 f9 = 15;
+  optional float f10 = 17;
+  optional bool f11 = 18;
+  message M6 {
+    optional int32 f1 = 1;
+  }
+  optional M6 f12 = 19;
+  optional int32 f13 = 20;
+  message M7 {
+    message M8 {
+      optional bool f1 = 1;
+    }
+    optional M8 f1 = 1;
+    optional bytes f2 = 2;
+  }
+  optional M7 f14 = 21;
+}
+
+message M9 {
+  repeated uint32 f1 = 1;
+  message M10 {
+    message M11 {
+      optional fixed32 f1 = 1;
+      optional float f2 = 2;
+      optional float f3 = 3;
+      optional int32 f4 = 4;
+      optional int32 f5 = 6;
+      optional float f6 = 7;
+      optional bool f7 = 9;
+    }
+    optional M11 f1 = 5;
+    optional uint64 f2 = 6;
+  }
+  optional M10 f2 = 2;
+  optional bytes f3 = 3;
+  optional float f4 = 5;
+  message M12 {
+    repeated int32 f1 = 2;
+    repeated int32 f2 = 7;
+    optional string f3 = 8;
+    optional int32 f4 = 9;
+    optional float f5 = 14;
+    optional int32 f6 = 15;
+    optional bool f7 = 16;
+  }
+  optional M12 f5 = 6;
+  optional int32 f6 = 7;
+  optional bytes f7 = 8;
+  optional int32 f8 = 9;
+  optional float f9 = 11;
+  optional bool f10 = 12;
+  optional float f11 = 14;
+  optional int64 f12 = 17;
+  optional float f13 = 19;
+  optional int64 f14 = 20;
+}
+
+message M13 {
+  optional float f1 = 2;
+  message M14 {
+    optional int32 f1 = 1;
+  }
+  optional M14 f2 = 4;
+  optional int32 f3 = 6;
+  optional bytes f4 = 7;
+  optional bytes f5 = 9;
+  optional string f6 = 10;
+  optional bool f7 = 11;
+  optional fixed64 f8 = 12;
+  optional int32 f9 = 14;
+}
+
+message M15 {
+  optional int32 f1 = 1;
+  message M16 {
+    optional int32 f1 = 1;
+  }
+  optional M16 f2 = 2;
+  optional int32 f3 = 3;
+  optional int32 f4 = 4;
+  optional uint32 f5 = 8;
+}
+
+message M17 {
+  optional uint64 f1 = 1;
+  optional float f2 = 2;
+  enum E1 {
+    E1_CONST_1 = 96;
+    E1_CONST_2 = 12;
+    E1_CONST_3 = 46;
+    E1_CONST_4 = 85;
+    E1_CONST_5 = 4662;
+  }
+  optional E1 f3 = 3;
+  repeated string f4 = 4;
+  optional string f5 = 7;
+  optional bool f6 = 8;
+  optional bytes f7 = 16;
+  message M18 {
+    optional int32 f1 = 2;
+    optional fixed32 f2 = 3;
+    optional int32 f3 = 4;
+    optional int32 f4 = 7;
+    enum E1 {
+      E1_CONST_1 = 99;
+      E1_CONST_2 = 37;
+      E1_CONST_3 = 72;
+      E1_CONST_4 = 10;
+      E1_CONST_5 = 76;
+    }
+    optional E1 f5 = 8;
+  }
+  optional M18 f8 = 20;
+}
+
+message M19 {
+  optional int32 f1 = 5;
+  optional bool f2 = 6;
+  optional string f3 = 8;
+  optional bool f4 = 11;
+  optional int32 f5 = 13;
+  message M20 {
+    optional string f1 = 1;
+  }
+  optional M20 f6 = 15;
+  optional int32 f7 = 16;
+  optional uint64 f8 = 17;
+  optional fixed64 f9 = 20;
+  message M21 {
+    message M22 {
+      optional string f1 = 1;
+      optional int32 f2 = 4;
+      optional fixed64 f3 = 5;
+      optional int32 f4 = 6;
+      optional uint32 f5 = 7;
+      optional bool f6 = 10;
+      optional string f7 = 11;
+      optional fixed64 f8 = 12;
+    }
+    optional M22 f1 = 4;
+    optional fixed64 f2 = 5;
+    optional string f3 = 9;
+  }
+  optional M21 f10 = 21;
+  optional float f11 = 22;
+  optional float f12 = 23;
+  optional string f13 = 24;
+  optional int32 f14 = 26;
+}
+
+message M23 {
+  message M24 {
+    optional float f1 = 1;
+    optional uint64 f2 = 2;
+    optional uint64 f3 = 3;
+    optional int32 f4 = 4;
+    optional float f5 = 5;
+  }
+  optional M24 f1 = 1;
+  optional double f2 = 2;
+  optional string f3 = 3;
+  optional bool f4 = 5;
+  optional int64 f5 = 13;
+  optional string f6 = 14;
+  optional int32 f7 = 18;
+  optional int32 f8 = 22;
+  optional float f9 = 23;
+  optional int32 f10 = 29;
+}
+
+message M25 {
+  optional int32 f1 = 1;
+  optional int32 f2 = 2;
+  optional bytes f3 = 3;
+  optional int32 f4 = 8;
+  optional int32 f5 = 9;
+  optional int32 f6 = 10;
+  optional string f7 = 11;
+  optional int32 f8 = 14;
+  optional fixed32 f9 = 15;
+  optional double f10 = 16;
+  optional bool f11 = 17;
+  message M26 {
+    optional int32 f1 = 1;
+    optional float f2 = 2;
+  }
+  optional M26 f12 = 25;
+}
