@@ -1,6 +1,6 @@
 # HyperProtoBench
 
-IMPORTANT: Please use [Fleetbench](https://github.com/google/fleetbench)'s proto benchmarks going forward. This project is kept for posterity, and will not be updated or maintained going forward.
+**IMPORTANT: Please use [Fleetbench](https://github.com/google/fleetbench)'s proto benchmarks going forward. This project is kept for posterity, and will not be updated or maintained going forward.**
 
 Version: 0.0.1-alpha
 
