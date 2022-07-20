@@ -9,8 +9,9 @@ serialization and deserialization. Each benchmark processes messages that are
 representative of those used in a service at Google. This suite is not intended
 to be static; we expect HyperProtoBench to evolve over time.
 
-Further details will be made available in an upcoming paper at the 54th IEEE/ACM
-International Symposium on Microarchitecture (MICRO 2021).
+Further details can be found in our MICRO 2021 paper, ["A Hardware Accelerator for Protocol Buffers"](https://doi.org/10.1145/3466752.3480051):
+
+> Sagar Karandikar, Chris Leary, Chris Kennelly, Jerry Zhao, Dinesh Parimi, Borivoje Nikolic, Krste Asanovic, and Parthasarathy Ranganathan. 2021. A Hardware Accelerator for Protocol Buffers. In MICRO-54: 54th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO '21). Association for Computing Machinery, New York, NY, USA, 462–478. https://doi.org/10.1145/3466752.3480051
 
 This is not an officially supported Google product.
 
